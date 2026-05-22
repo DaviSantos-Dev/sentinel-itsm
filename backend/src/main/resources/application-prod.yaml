@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: SentinelITSM
+  datasource:
+    url: jdbc:postgresql://localhost:5050
+    username: postgres
+    password: 1234
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  sql:
+    init:
+      mode: always
