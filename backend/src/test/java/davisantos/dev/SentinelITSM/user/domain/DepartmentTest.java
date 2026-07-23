@@ -1,6 +1,6 @@
 package davisantos.dev.SentinelITSM.user.domain;
 
-import davisantos.dev.SentinelITSM.modules.user.domain.Department;
+import davisantos.dev.SentinelITSM.modules.department.domain.Department;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

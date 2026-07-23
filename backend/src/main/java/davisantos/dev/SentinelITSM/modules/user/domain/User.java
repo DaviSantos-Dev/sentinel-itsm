@@ -1,10 +1,10 @@
 package davisantos.dev.SentinelITSM.modules.user.domain;
 
+import davisantos.dev.SentinelITSM.modules.department.domain.Department;
 import davisantos.dev.SentinelITSM.shared.exceptions.InvalidStateException;
 import davisantos.dev.SentinelITSM.shared.exceptions.InvalidValueException;
 import davisantos.dev.SentinelITSM.modules.user.domain.enums.Role;
 import davisantos.dev.SentinelITSM.modules.user.domain.enums.UserStatus;
-import davisantos.dev.SentinelITSM.modules.user.domain.exceptions.InvalidDepartmentException;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.AccessLevel;
@@ -18,39 +18,30 @@ import java.time.Instant;
 @Getter
 @ToString
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Table(name = "user_table")
+@Table(name = "users_tb")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @Column(name ="first_name", nullable = false)
     private String firstName;
-
     @Column(name ="last_name", nullable = false)
     private String lastName;
-
     @Email
     @Column(nullable = false, unique = true)
     private String email;
-
     @Column(nullable = false)
     private String password;
-
     @Enumerated(EnumType.STRING)
     private Role role;
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id",nullable = false)
     private Department department;
-
     @Enumerated(EnumType.STRING)
     private UserStatus status;
-
     @Column (name ="created_at",nullable = false)
     private Instant createdAt;
-
     @Column (name ="updated_at")
     private Instant updatedAt;
 
@@ -105,7 +96,7 @@ public class User {
             throw new InvalidValueException("Department is required");
         }
         if (!department.isActive()){
-            throw new InvalidDepartmentException("This department is not active");
+            throw new InvalidStateException("This department is not active");
         }
         this.department = department;
     }

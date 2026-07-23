@@ -1,7 +1,7 @@
 package davisantos.dev.SentinelITSM.user.repositories;
 
-import davisantos.dev.SentinelITSM.modules.user.domain.Department;
-import davisantos.dev.SentinelITSM.modules.user.repositories.DepartmentRepository;
+import davisantos.dev.SentinelITSM.modules.department.domain.Department;
+import davisantos.dev.SentinelITSM.modules.department.repository.DepartmentRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

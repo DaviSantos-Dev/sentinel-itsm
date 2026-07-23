@@ -1,5 +1,6 @@
-package davisantos.dev.SentinelITSM.modules.user.domain;
+package davisantos.dev.SentinelITSM.modules.department.domain;
 
+import davisantos.dev.SentinelITSM.modules.user.domain.User;
 import davisantos.dev.SentinelITSM.shared.exceptions.InvalidStateException;
 import davisantos.dev.SentinelITSM.shared.exceptions.InvalidValueException;
 import jakarta.persistence.*;
@@ -9,7 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.time.Instant;
-import java.util.List;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -23,7 +24,7 @@ public class Department {
     @Column(unique = true, nullable = false)
     private String name;
     @OneToMany(mappedBy = "department")
-    private List<User> users;
+    private Set<User> users;
     private boolean active;
     @Column(nullable = false)
     private Instant createdAt;
