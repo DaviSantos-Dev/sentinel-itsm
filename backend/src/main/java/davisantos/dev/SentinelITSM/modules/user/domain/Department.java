@@ -1,7 +1,7 @@
-package davisantos.dev.SentinelITSM.user.domain;
+package davisantos.dev.SentinelITSM.modules.user.domain;
 
-import davisantos.dev.SentinelITSM.shared.InvalidStateException;
-import davisantos.dev.SentinelITSM.shared.InvalidValueException;
+import davisantos.dev.SentinelITSM.shared.exceptions.InvalidStateException;
+import davisantos.dev.SentinelITSM.shared.exceptions.InvalidValueException;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;

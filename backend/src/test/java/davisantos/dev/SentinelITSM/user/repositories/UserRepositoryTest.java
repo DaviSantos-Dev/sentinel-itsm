@@ -1,8 +1,10 @@
 package davisantos.dev.SentinelITSM.user.repositories;
 
-import davisantos.dev.SentinelITSM.user.domain.Department;
-import davisantos.dev.SentinelITSM.user.domain.User;
-import davisantos.dev.SentinelITSM.user.domain.enums.Role;
+import davisantos.dev.SentinelITSM.modules.user.domain.Department;
+import davisantos.dev.SentinelITSM.modules.user.domain.User;
+import davisantos.dev.SentinelITSM.modules.user.domain.enums.Role;
+import davisantos.dev.SentinelITSM.modules.user.repositories.DepartmentRepository;
+import davisantos.dev.SentinelITSM.modules.user.repositories.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,6 +1,8 @@
 package davisantos.dev.SentinelITSM.user.domain;
 
-import davisantos.dev.SentinelITSM.user.domain.enums.Role;
+import davisantos.dev.SentinelITSM.modules.user.domain.Department;
+import davisantos.dev.SentinelITSM.modules.user.domain.User;
+import davisantos.dev.SentinelITSM.modules.user.domain.enums.Role;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

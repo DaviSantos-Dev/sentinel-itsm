@@ -1,4 +1,4 @@
-package davisantos.dev.SentinelITSM.user.domain.exceptions;
+package davisantos.dev.SentinelITSM.modules.user.domain.exceptions;
 
 public class InvalidDepartmentException extends RuntimeException {
     public InvalidDepartmentException(String message) {

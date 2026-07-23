@@ -1,10 +1,10 @@
-package davisantos.dev.SentinelITSM.user.domain;
+package davisantos.dev.SentinelITSM.modules.user.domain;
 
-import davisantos.dev.SentinelITSM.shared.InvalidStateException;
-import davisantos.dev.SentinelITSM.shared.InvalidValueException;
-import davisantos.dev.SentinelITSM.user.domain.enums.Role;
-import davisantos.dev.SentinelITSM.user.domain.enums.UserStatus;
-import davisantos.dev.SentinelITSM.user.domain.exceptions.InvalidDepartmentException;
+import davisantos.dev.SentinelITSM.shared.exceptions.InvalidStateException;
+import davisantos.dev.SentinelITSM.shared.exceptions.InvalidValueException;
+import davisantos.dev.SentinelITSM.modules.user.domain.enums.Role;
+import davisantos.dev.SentinelITSM.modules.user.domain.enums.UserStatus;
+import davisantos.dev.SentinelITSM.modules.user.domain.exceptions.InvalidDepartmentException;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.AccessLevel;

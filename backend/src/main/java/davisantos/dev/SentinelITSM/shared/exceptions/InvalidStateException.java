@@ -1,4 +1,4 @@
-package davisantos.dev.SentinelITSM.shared;
+package davisantos.dev.SentinelITSM.shared.exceptions;
 
 public class InvalidStateException extends RuntimeException {
     public InvalidStateException(String message) {

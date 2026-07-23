@@ -1,4 +1,4 @@
-package davisantos.dev.SentinelITSM.user.domain.enums;
+package davisantos.dev.SentinelITSM.modules.user.domain.enums;
 
 public enum Role {
     CLIENT,
