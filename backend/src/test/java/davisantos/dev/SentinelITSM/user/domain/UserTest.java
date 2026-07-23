@@ -11,8 +11,8 @@ public class UserTest {
 
     @Test
     void createUserTest(){
-        Department department = new Department("RH");
-        User davi = new User("Davi", "Santos","meuemail@gmail.com","1234", "ROLE_ADMIN", department);
+        Department department = new Department("TI");
+        User davi = new User("Davi", "Santos","meuemail@gmail.com","1234", Role.ADMIN, department);
 
         System.out.println();
         System.out.println(davi);
